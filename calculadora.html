@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PRÁCTICA DAT: Calculadora SPA</title>
+        <link rel="stylesheet" type="text/css" href="css/calculadora.css" title="style" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <script src="js/jquery-1.11.2.min.js" type="text/javascript"></script> 
+        <script src="js/calculadora.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h1>CALCULADORA SPA</h1>
+         <ul>
+            <li>Pulsa en cualquiera de los números o escribe directamente en el display.</li>
+            <li>Puedes calcular directamente una operación detrás de otra sin darle a =.</li>
+            <li>Para realizar el cálculo, pulsa sobre el signo de operación deseado trás tener el primer operando en el display.</li>
+            <li>Para realizar las operaciones de &#8730;x , x² , y cambiar el signo con +/- tienes primero que tener en el display el número al que le deseamos realizar la operación.</li>
+        </ul>
+
+        <div id="calculadora">
+            <form><input id="display" type="text" name="numDisplay" value="0"></form>
+            <table>
+                <tr>
+                    <td><input value=" C " id="c" class="btn-info btn-fbtn btn-block" title=" BORRAR" type="button"></td>
+	                <td><input value=" &#8730;x " id="raiz" class="btn-fbtn btn-block" title=" RAIZ " type="button"></td>
+	                <td><input value=" x² " id="cuadrado" class="btn-fbtn btn-block" title=" CUADRADO " type="button"></td>
+	                <td><input value=" +/- " id="signo" class="btn-info btn-fbtn btn-block" title="SIGNO" type="button"></td>
+                </tr>
+                <tr>
+                    <td><input value=" 7 " id="7" class="btn-fbtn btn-block" title=" 7 " type="button"></td>
+	                <td><input value=" 8 " id="8" class="btn-fbtn btn-block" title=" 8 " type="button"></td>
+	                <td><input value=" 9 " id="9" class="btn-fbtn btn-block" title=" 9 " type="button"></td>
+	                <td><input value=" / " id="divide" class="btn-info btn-fbtn btn-block" title="DIVIDIR" type="button"></td>
+                </tr>
+                <tr>
+	                <td><input value=" 4 " id="4" class="btn-fbtn btn-block" title=" 4 " type="button"></td>
+	                <td><input value=" 5 " id="5" class="btn-fbtn btn-block" title=" 5 " type="button"></td>
+	                <td><input value=" 6 " id="6" class="btn-fbtn btn-block" title=" 6 " type="button"></td>
+	                <td><input value=" x " id="multiplica" class="btn-info btn-fbtn btn-block" title="MULTIPLICAR" type="button"></td>   
+                </tr>
+                <tr>
+	                <td><input value=" 1 " id="1" class="btn-fbtn btn-block" title=" 1 " type="button"></td>
+	                <td><input value=" 2 " id="2" class="btn-fbtn btn-block" title=" 2 " type="button"></td>
+	                <td><input value=" 3 " id="3" class="btn-fbtn btn-block" title=" 3 " type="button"></td>
+	                <td><input value=" - " id="resta" class="btn-info btn-fbtn btn-block" title="RESTAR" type="button"></td>
+                </tr>
+                <tr>
+	                <td><input value=" 0 " id="0" class="btn-fbtn btn-block" title=" 0 " type="button"></td>
+	                <td><input value=" . " id="coma" class="btn-fbtn btn-block" title="COMA" type="button" /></td>
+	                <td><input value=" = " id="igual" class="btn-danger btn-fbtn btn-block" title="RESULTADO" type="button" /></td>
+	                <td><input value=" + " id="suma" class="btn-info btn-fbtn btn-block" title="SUMAR" type="button"></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </body>
+</html>
